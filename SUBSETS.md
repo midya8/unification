@@ -2,7 +2,7 @@
 
 The finite-term solver answers one system. This extension asks which indexed obligations explain failure, and which deletions make the original system unifiable. It is an original bounded exhaustive inspector of established concepts, not a new MUS, MCS, SAT, MaxSAT or diagnosis algorithm.
 
-[Live subset inspector](https://midya8.github.io/unifylab/cores.html) · [Base rewrite method](METHOD.md)
+[Live subset inspector](https://midya8.github.io/unification/cores.html) · [Base rewrite method](METHOD.md)
 
 ## Indexed finite-term semantics
 

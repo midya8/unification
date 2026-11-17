@@ -1,6 +1,6 @@
 # Unification
 
-UnifyLab solves small finite first-order equation systems and records every pending equation, composed substitution, constructor conflict and occurs-check path.
+This implementation solves small finite first-order equation systems and records every pending equation, composed substitution, constructor conflict and occurs-check path.
 
 [Live inspector](https://midya8.github.io/unification/) · [Method, limits and inspected sources](METHOD.md)
 

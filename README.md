@@ -1,8 +1,8 @@
-# UnifyLab
+# Unification
 
 UnifyLab solves small finite first-order equation systems and records every pending equation, composed substitution, constructor conflict and occurs-check path.
 
-[Live inspector](https://midya8.github.io/unifylab/) · [Method, limits and inspected sources](METHOD.md)
+[Live inspector](https://midya8.github.io/unification/) · [Method, limits and inspected sources](METHOD.md)
 
 ## Choose a calculation
 
@@ -56,14 +56,14 @@ Established finite-tree syntactic unification, not a new algorithm. Six variable
 
 ## Equation conflicts and deletion repairs
 
-[Equation-subset inspector](https://midya8.github.io/unifylab/cores.html) · [Subset method and eight inspected sources](SUBSETS.md)
+[Equation-subset inspector](https://midya8.github.io/unification/cores.html) · [Subset method and eight inspected sources](SUBSETS.md)
 
 Run `python -m unifylab --subsets examples/equations.json`. Every indexed subset is solved independently. Confirmed inclusion-minimal conflicts show successful single deletions; confirmed deletion repairs list indices to remove and failing restorations. Duplicate equations keep separate identities. Minimal is not minimum-cardinality. A resource limit stays unknown and withholds completeness and minimum-size claims; an aggregate summary is not a base rewrite certificate. Any selected subsystem opens in the existing rewrite inspector for its detailed trace.
 
 
 ## Ground-term generalization
 
-[Ground-term generalization inspector](https://midya8.github.io/unifylab/generalize.html) · [Generalization method and inspected sources](GENERALIZATION.md)
+[Ground-term generalization inspector](https://midya8.github.io/unification/generalize.html) · [Generalization method and inspected sources](GENERALIZATION.md)
 
 `python -m unifylab --generalize terms.json -o generalization.json` retains common constructors and reuses one variable for each repeated ordered disagreement pair. Both exact reconstruction maps and every postorder node remain inspectable. `python -m unifylab --verify-generalization generalization.json` checks the supplied canonical trace without calling its generator. Two reconstructions alone do not establish least-generality: a fresh-per-position trace can reconstruct yet lose a shared equality. Finite **ground inputs only**, distinct from the solver's variable-bearing equations. Established Plotkin/Reynolds anti-unification, not a new algorithm or code-repair system.
 
